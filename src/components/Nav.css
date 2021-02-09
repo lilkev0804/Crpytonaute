@@ -1,0 +1,22 @@
+header{
+    background-color: black;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+.NavLinkElement{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavLinks{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-bottom: 1px solid transparent;
+}
+.NavLinks:hover{
+    border-bottom: 1px solid red;
+}

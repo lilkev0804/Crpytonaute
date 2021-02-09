@@ -1,0 +1,39 @@
+.CoinCard{
+    border: 1px solid red;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+}
+.CoinCardTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0px 5px;
+}
+.CoinImg{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.CoinName{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.CoinSymbol{
+    font-size: 1rem;
+}
+.CoinInfo{
+    font-weight: 500;
+}
+.CoinInfoVar{
+    font-weight: 500;
+    color: black;
+}
+.PriceGreen{
+    color: green;
+}
+.PriceRed{
+    color: red;
+}
