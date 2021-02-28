@@ -1,7 +1,7 @@
 import React from 'react'
 import './CoinRapport.css'
 
-export default function CoinRapport({name , image, symbol, price, volume, low, hight , priceChange, lastUpdate, capitalisation}) {
+export default function CoinRapport({name , image, symbol, price, volume, low, hight , priceChange, lastUpdate, capitalisation, show}) {
     return (
         <div className="CoinCard">
                 <div className="CoinCardTop">

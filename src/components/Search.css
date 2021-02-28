@@ -11,3 +11,12 @@
 .CoinInput:focus{
     outline: none;
 }
+.choiceSearch{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selectorOption{
+    margin-left: 10px;
+}
