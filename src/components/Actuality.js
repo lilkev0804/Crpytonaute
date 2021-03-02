@@ -20,7 +20,7 @@ export default function Actuality() {
        }catch{
             history.goBack()
        }
-    },[])
+    },[history])
 
 
 
