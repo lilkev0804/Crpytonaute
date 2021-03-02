@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React,{useState, useEffect} from 'react'
+import { useHistory } from "react-router-dom";
 
 import './Actuality.css'
 
@@ -7,12 +8,18 @@ import './Actuality.css'
 export default function Actuality() {
     const [actuality, setActuality] = useState([''])
 
+    let history = useHistory('')
+
     useEffect(()=> {
+       try{
         const fetch = async () => {
             const req = await axios.get("https://min-api.cryptocompare.com/data/v2/news/")
             setActuality(req.data.Data)
         }
         fetch()
+       }catch{
+            history.goBack()
+       }
     },[])
 
 
