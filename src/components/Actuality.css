@@ -1,7 +1,8 @@
 .MainActuality{
-    height: 200px;
+    min-height: 250px;
+    max-height:100vh;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +18,7 @@
     background-color: white;
 }
 .right{
-    height: 100%;
+    min-height:250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +31,6 @@
 .Resume{
     overflow: hidden;
     width: 90%;
-    height: 220px;
     text-align: justify;
 }
 .imgActuality{
@@ -41,15 +41,13 @@
     font-weight: 800;
     letter-spacing: 1.4px;
     line-height: 1.5rem;
-}
-.ActualityLink{
-    border: 1px solid black;
-    color: white;
     text-decoration: none;
-    background-color: black;
-    padding: 8px 12px;
-    border-radius: 20px;
+    color: white;
 }
+.TitleActuality:hover{
+    text-decoration: underline;
+}
+
 .SourceActuality{
     text-transform: capitalize;
 }

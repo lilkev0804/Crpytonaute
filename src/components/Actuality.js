@@ -34,13 +34,13 @@ export default function Actuality() {
                             <img className="imgActuality" src={actual.imageurl} alt="salut"/>
                         </div>    
                         <div className="right">
-                            <p className="TitleActuality">{actual.title}</p>
+                        <a className="TitleActuality" href={actual.url} alt="_blanck" >{actual.title}</a>
                             <div className="infoActuality">
                                 {/* <p>Catégorie : {actual.categories}</p> */}
                                 <p className="SourceActuality">{actual.source} - {actual.published_on}</p>
                             </div>
                             <p className="Resume">{actual.body > 100 ? actual.body.substring(0,200) + '...' : actual.body }</p>
-                            <a className="ActualityLink" href={actual.url} alt="_blanck" >Visited</a>
+                            
                         </div>
                     </div>
                     )}
