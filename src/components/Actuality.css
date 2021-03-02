@@ -1,0 +1,55 @@
+.MainActuality{
+    height: 200px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+.right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 2px 0px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+}
+.Resume{
+    overflow: hidden;
+    width: 90%;
+    height: 220px;
+    text-align: justify;
+}
+.imgActuality{
+    width: 150px;
+    height: 150px;
+}
+.TitleActuality{
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    line-height: 1.5rem;
+}
+.ActualityLink{
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+.SourceActuality{
+    text-transform: capitalize;
+}

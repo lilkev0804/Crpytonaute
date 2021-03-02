@@ -1,9 +1,45 @@
-import React from 'react'
+import axios from 'axios'
+import React,{useState, useEffect} from 'react'
+
+import './Actuality.css'
+
 
 export default function Actuality() {
+    const [actuality, setActuality] = useState([''])
+
+    useEffect(()=> {
+        const fetch = async () => {
+            const req = await axios.get("https://min-api.cryptocompare.com/data/v2/news/")
+            setActuality(req.data.Data)
+        }
+        fetch()
+    },[])
+
+
+
     return (
         <div>
-            <h1>In build page</h1>
+                <div className="actuality">
+                    {actuality.map(actual => 
+                    <div className="MainActuality">
+                        
+                        <div className="left">
+                            <img className="imgActuality" src={actual.imageurl} alt="salut"/>
+                        </div>    
+                        <div className="right">
+                            <p className="TitleActuality">{actual.title}</p>
+                            <div className="infoActuality">
+                                {/* <p>Catégorie : {actual.categories}</p> */}
+                                <p className="SourceActuality">{actual.source} - {actual.published_on}</p>
+                            </div>
+                            <p className="Resume">{actual.body > 100 ? actual.body.substring(0,200) + '...' : actual.body }</p>
+                            <a className="ActualityLink" href={actual.url} alt="_blanck" >Visited</a>
+                        </div>
+                    </div>
+                    )}
+                </div>
+                
+
         </div>
     )
 }

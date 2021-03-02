@@ -13,19 +13,12 @@ export default function Search() {
     const [invisible, setInvisible] = useState(false)
 
     const[ variation,setVariation] = useState([])
-    // useEffect(()=>  {
-    //     axios.get(url)
-    //     .then(res => {
-    //         setCurrency(res.data)
-    //         setChange(res.data.price_change_percentage_24h)
-    //     }).catch(error => console.log(error))
-    // },[])
+
 
     useEffect(() => {
         const fetchData = async() => {
             const req = await axios.get(url)
             setCurrency(req.data)
-            // setCrypto(req.data.price_change_percentage_24h)
         }
         fetchData()
     }, [])
