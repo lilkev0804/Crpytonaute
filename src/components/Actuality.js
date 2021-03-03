@@ -30,14 +30,15 @@ export default function Actuality() {
                     
                         <div className="right">
                             <div className="topAct">
-                                <img className="imgActuality" src={actual.imageurl} alt="Logo of the news"/>
                                 <a className="TitleActuality" href={actual.url} rel="noreferrer" target="_blank" >{actual.title}</a>
+                                <img className="imgActuality" src={actual.imageurl} alt="Logo of the news"/>
                             </div>
                        
                             <div className="infoActuality">
                                 {/* <p>Catégorie : {actual.categories}</p> */}
                                 <p className="SourceActuality">{actual.source} - {actual.published_on}</p>
                                 <p className="Resume">{actual.body ? actual.body.substring(0,150) + '...' : "No resume is available" }</p>
+                                <a className="TitleActualityBot" href={actual.url} rel="noreferrer" target="_blank" >Read</a>
                             </div>
                         </div>
                     </div>

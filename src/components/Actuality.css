@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0px 2px 0px;
+    padding: 10px 3px 2px 3px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.589);
     color: white;
@@ -32,8 +32,8 @@
     text-align: center;
 }
 .imgActuality{
-    width:50px;
-    height:50px;
+    width:80px;
+    height:80px;
 }
 .TitleActuality{
     font-weight: 800;
@@ -41,6 +41,9 @@
     line-height: 1.5rem;
     text-decoration: none;
     color: white;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.4rem;
 }
 .TitleActuality:hover{
     text-decoration: underline;
@@ -48,19 +51,37 @@
 
 .SourceActuality{
     text-transform: capitalize;
+    font-weight: 400;
 }
 .infoActuality{
     min-height: 100px ;
-    align-self: flex-end;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
 }
 .SourceActuality{
-    align-self: flex-end;
+    align-self: flex-start;
 }
 .Resume{
-    text-align: right;
-    align-self: flex-end;
+    text-align: left;
+    align-self: flex-start;
+}
+.TitleActualityBot{
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    max-width: 100px;
+    border-radius: 10px;
+    animation: all .5s ease-in;
+    background-color: transparent;
+}
+.TitleActualityBot:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
 }
