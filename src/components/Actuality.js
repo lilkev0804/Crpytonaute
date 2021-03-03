@@ -12,15 +12,12 @@ export default function Actuality() {
 
     const actuUrl = "https://min-api.cryptocompare.com/data/v2/news/"
     useEffect(()=> {
-       try{
         const fetch = async () => {
             const req = await axios.get(actuUrl)
             setActuality(req.data.Data)
+            console.log(req.data.Data)
         }
         fetch()
-       }catch(error){
-           console.log(error)
-       }
     })
 
 
