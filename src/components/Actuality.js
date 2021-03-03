@@ -15,6 +15,7 @@ export default function Actuality() {
         const fetch = async () => {
             const req = await axios.get(actuUrl)
             setActuality(req.data.Data)
+            console.log(req.data.Data)
         }
         fetch()
     },[])
@@ -29,7 +30,7 @@ export default function Actuality() {
                     
                         <div className="right">
                             <div className="topAct">
-                                <img className="imgActuality" src={actual.imageurl} alt="salut"/>
+                                <img className="imgActuality" src={actual.imageurl} alt="Logo of the news"/>
                                 <a className="TitleActuality" href={actual.url} rel="noreferrer" target="_blank" >{actual.title}</a>
                             </div>
                        

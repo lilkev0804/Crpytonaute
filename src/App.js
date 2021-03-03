@@ -9,16 +9,18 @@ import './App.css';
 
 function App() {
   return (
+    <div className="App">
    <Router>
-     <div className="App">
+     
         <Nav/>
           <Switch>
-              <Route exact path="/" component={Search}/>
-              <Route exact path="/actuality" component={Actuality}/>
-              <Route exact path="/convert" component={Convert}/>
+              <Route exact path="/" ><Search></Search></Route>
+              <Route exact path="/actuality" ><Actuality></Actuality></Route>
+              <Route exact path="/convert" ><Convert></Convert></Route>
           </Switch>
-     </div>
+     
    </Router>
+   </div>
   );
 }
 
