@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React,{useState, useEffect} from 'react'
-import { useHistory } from "react-router-dom";
+
 
 import './Actuality.css'
 
@@ -9,7 +9,7 @@ import './Actuality.css'
 export default function Actuality() {
     const [actuality, setActuality] = useState([''])
 
-    let history = useHistory('')
+
     const actuUrl = "https://min-api.cryptocompare.com/data/v2/news/"
     useEffect(()=> {
        try{
@@ -18,10 +18,10 @@ export default function Actuality() {
             setActuality(req.data.Data)
         }
         fetch()
-       }catch{
-            history.goBack()
+       }catch(error){
+           console.log(error)
        }
-    },[history])
+    })
 
 
 
@@ -40,9 +40,8 @@ export default function Actuality() {
                             <div className="infoActuality">
                                 {/* <p>Catégorie : {actual.categories}</p> */}
                                 <p className="SourceActuality">{actual.source} - {actual.published_on}</p>
+                                <p className="Resume">{actual.body ? actual.body.substring(0,150) + '...' : "No resume is available" }</p>
                             </div>
-                            <p className="Resume">{actual.body ? actual.body.substring(0,150) + '...' : "No resume" }</p>
-                            
                         </div>
                     </div>
                     )}

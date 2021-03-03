@@ -14,7 +14,6 @@
     min-height:250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 0px 2px 0px;
     width: 100%;
@@ -30,7 +29,7 @@
 .Resume{
     overflow: hidden;
     width: 90%;
-    text-align: justify;
+    text-align: center;
 }
 .imgActuality{
     width:50px;
@@ -49,4 +48,19 @@
 
 .SourceActuality{
     text-transform: capitalize;
+}
+.infoActuality{
+    min-height: 100px ;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.SourceActuality{
+    align-self: flex-end;
+}
+.Resume{
+    text-align: right;
+    align-self: flex-end;
 }
