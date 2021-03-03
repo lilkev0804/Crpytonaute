@@ -1,6 +1,5 @@
 import {BrowserRouter as Router, Switch, Route,} from "react-router-dom"
 import Actuality from './components/Actuality'
-import Convert from './components/Convert'
 import Nav from './components/Nav'
 import Search from './components/Search'
 import './App.css';
@@ -16,7 +15,6 @@ function App() {
           <Switch>
               <Route exact path="/" ><Search></Search></Route>
               <Route exact path="/actuality" ><Actuality></Actuality></Route>
-              <Route exact path="/convert" ><Convert></Convert></Route>
           </Switch>
      
    </Router>

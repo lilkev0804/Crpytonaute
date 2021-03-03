@@ -10,7 +10,6 @@ export default function Nav() {
                <ul className="NavLinkElement">
                    <Link className="NavLinks" to="/" ><li>Search currency</li></Link>
                    <Link className="NavLinks" to="/actuality"><li>actuality</li></Link>
-                   <Link className="NavLinks" to="/convert"><li>convert</li></Link>
                 </ul> 
         </header>
     
