@@ -9,14 +9,7 @@
     margin: 10px auto;
     border: 1px solid black;
 }
-.left{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 100%;
-    background-color: white;
-}
+
 .right{
     min-height:250px;
     display: flex;
@@ -24,9 +17,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px 2px 0px;
-    width: 60%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.589);
     color: white;
+}
+.topAct{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .Resume{
     overflow: hidden;
@@ -34,8 +33,8 @@
     text-align: justify;
 }
 .imgActuality{
-    width: 150px;
-    height: 150px;
+    width:50px;
+    height:50px;
 }
 .TitleActuality{
     font-weight: 800;
