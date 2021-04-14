@@ -15,7 +15,6 @@ export default function Actuality() {
         const fetch = async () => {
             const req = await axios.get(actuUrl)
             setActuality(req.data.Data)
-            console.log(req.data.Data)
         }
         fetch()
     },[])
